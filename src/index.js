@@ -1,6 +1,8 @@
-import module from './module';
-import './index.less';
-import './second.less';
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import App from './containers/App'
 
-console.log(module.sayHello());
-document.getElementById('app').innerHTML = module.sayHello('webpack');
+render(
+    <App />,
+    document.getElementById('app')
+)

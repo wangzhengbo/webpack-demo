@@ -40,9 +40,9 @@ module.exports = {
             template: 'index.html'
         }),
         new ExtractTextPlugin("styles.css"),
-        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.UglifyJsPlugin()/*,
         new OpenBrowserPlugin({
             url: `http://localhost:${port}`
-        })
+        })*/
     ]
 }
